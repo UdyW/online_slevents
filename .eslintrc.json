@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
+  ],
+  "rules": {
+    "jsx-a11y/no-noninteractive-tabindex": "off", // TODO add this to eslint-config / someone to fix
+    "jsx-a11y/tabindex-no-positive": "off", // TODO add this to eslint-config / someone to fix
+    "import/no-extraneous-dependencies": "off", // @storybook/react
+    "react/no-unescaped-entities": "off",
+    "react/require-default-props": "off", // TODO add this to eslint-config / someone to fix
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/role-supports-aria-props": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/jsx-max-props-per-line": [1, { "maximum": 3 }]
+  }
 }

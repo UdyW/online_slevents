@@ -25,14 +25,14 @@ app
         const parsedUrl = parse(req.url, true);
 
         services.logger.debug(
-          `server index:: removing context route from url:: ${req.url}`
+          `server index:: removing context route from url:: ${req.url}`,
         );
 
         req.url = req.url.replace(contextRoute, '');
 
         if (req.url[0] !== '/') {
           services.logger.debug(
-            `server index:: prepending "/" to req.url for index route:: ${req.url}`
+            `server index:: prepending "/" to req.url for index route:: ${req.url}`,
           );
 
           req.url = `/${req.url}`;
@@ -48,7 +48,7 @@ app
 
       server.listen(process.env.APP_PORT, () => {
         services.logger.debug(
-          `server index:: listening on port ${process.env.APP_PORT}`
+          `server index:: listening on port ${process.env.APP_PORT}`,
         );
       });
     } catch (err) {
