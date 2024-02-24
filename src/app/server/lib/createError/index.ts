@@ -38,7 +38,7 @@ class GeneralError extends Error implements IGeneralError {
     message: ErrorMessage,
     statusCode?: ErrorStatus,
     errorObject?: ErrorObject,
-    originalError?: GeneralError | Error
+    originalError?: GeneralError | Error,
   ) {
     super(message);
     this.errorName = errorName || 'UnknownError';

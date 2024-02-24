@@ -26,12 +26,12 @@ const cleanupUrl =
     const cleanUrl = removeExtraUrlSlashes(req.url, services);
 
     services.logger.debug(
-      `cleanupUrl:: url is clean:: ${cleanUrl === req.url}`
+      `cleanupUrl:: url is clean:: ${cleanUrl === req.url}`,
     );
 
     if (cleanUrl !== req.url) {
       services.logger.warning(
-        `cleanupUrl:: url not clean 301 redirecting to:: ${cleanUrl}`
+        `cleanupUrl:: url not clean 301 redirecting to:: ${cleanUrl}`,
       );
 
       return res.redirect(301, cleanUrl);

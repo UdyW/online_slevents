@@ -23,7 +23,7 @@ const errorHandler = (
   err: any,
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ): void => {
   res.status(getStatusCode(err)).json(getErrorResponse(err));
 };

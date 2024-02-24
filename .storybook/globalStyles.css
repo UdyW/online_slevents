@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url('./fonts/LeagueSpartan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LeagueSpartanBold';
+  src: url('./fonts/LeagueSpartan-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 761px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'LeagueSpartan', Verdana, sans-serif;
+  color: #404040;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'LeagueSpartan', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.shell-type {
+  font-family: 'LeagueSpartan', Arial, sans-serif;
+}
+.shell-bold-type {
+  font-family: 'LeagueSpartanBold', Arial, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 2.178rem;
+  color: #0097bb;
+}
+
+h2 {
+  font-size: 1.913rem;
+}
+
+h3 {
+  font-size: 1.296rem;
+}
+
+p {
+  margin: 0.678rem 0;
+}
+
+li {
+  font-weight: normal;
+  color: #404040;
+  list-style-type: none;
+}
+
+a {
+  color: #003c88;
+}
+a:hover,
+a:active {
+  color: #0a274d;
+}
+a:visited {
+  color: #800080;
+}
+
+.btn:focus,
+a:focus {
+  outline: thin dotted #404040;
+}
+
+input {
+  border: 1px solid #a6a6a6;
+  padding: 1rem 0.678rem;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin: 3px 0;
+}
+
+input::placeholder {
+  color: #7f7f7f;
+}
+
+.tm {
+  display: inline-block;
+  position: relative;
+}
+.tm:after {
+  content: '™';
+  position: relative;
+  top: -16px;
+  color: #404040;
+  font-size: 1rem;
+}
+
+.layout-centered {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 481px) {
+  .btn-hero {
+    width: auto;
+  }
+
+  .read-limit {
+    max-width: 620px;
+  }
+}
+
+@media only screen and (min-width: 761px) {
+  .btn-hero {
+    width: auto;
+  }
+}
+
+/* Storybook only */
+.brand {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.brand.hasContent {
+  padding-bottom: 1rem;
+}
+
+.brand p {
+  width: 50%;
+  color: #595959;
+}
+
+.brand p a {
+  display: block;
+  color: #595959;
+  text-decoration: none;
+}
+
+.brand__header--secondary {
+  font-family: Arial;
+  font-size: 0.9rem;
+  color: #595959;
+  margin-bottom: 0.5rem;
+}
+
+.brand__header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #404040;
+  margin-bottom: 1rem;
+}
+
+.brand__header::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 5px;
+  background-color: #0097bb;
+}
+
+.brand__header--tertiary {
+  color: #404040;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.section {
+  padding: 1rem 0;
+}
+
+.section--half {
+  width: 50%;
+}
+
+@media (max-width: 1080px) {
+  .section--half {
+    width: 100%;
+  }
+}
+
+.section__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section__item {
+  display: flex;
+  width: 4.7rem;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section__item__icon {
+  margin-bottom: 0.25rem;
+  background-color: #f9f9f9;
+  padding: 0.85rem;
+}
+
+.section__item__icon svg {
+  display: block;
+}
+
+.icon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.icon-table td {
+  text-align: center;
+  vertical-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 500px) {
+  .icon-table td {
+    padding: 1rem 0;
+  }
+}
