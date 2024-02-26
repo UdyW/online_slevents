@@ -2,15 +2,12 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Menu as MenuComponent } from '../Menu';
 
 const meta = {
-  title: 'Example/Menu',
+  title: 'Components/Menu',
   component: MenuComponent,
   parameters: {
     layout: 'fullscreen',
   },
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } satisfies Meta<typeof MenuComponent>;
 
 export default meta;
@@ -69,7 +66,7 @@ export const Menu: Story = {
     ],
     authenticatedMenuName: 'Account',
     loginUrl: 'http://google.co.uk',
-    loginText: 'Login',
+    loginText: 'Sign In',
     logoutText: 'Sign out',
     logoutUrl: 'http://google.co.uk',
     showAccountSwitcher: true,
@@ -81,9 +78,6 @@ export const Menu: Story = {
 
   argTypes: {
     isUserAuthenticated: {
-      type: {
-        required: true,
-      },
       table: {
         type: {
           summary: 'boolean',
@@ -220,9 +214,6 @@ export const Menu: Story = {
       },
     },
     brandLogo: {
-      type: {
-        required: false,
-      },
       table: {
         type: {
           summary: ['energy', 'broadband'],
@@ -234,9 +225,6 @@ export const Menu: Story = {
       },
     },
     showAccountSwitcher: {
-      type: {
-        required: false,
-      },
       table: {
         type: {
           summary: 'boolean',
@@ -247,9 +235,6 @@ export const Menu: Story = {
       },
     },
     authenticatedMenu: {
-      type: {
-        required: true,
-      },
       table: {
         type: {
           summary: 'object array',
@@ -260,9 +245,6 @@ export const Menu: Story = {
       },
     },
     featuredMenuItem: {
-      type: {
-        required: true,
-      },
       table: {
         type: {
           summary: 'object',
@@ -273,9 +255,6 @@ export const Menu: Story = {
       },
     },
     secondaryMenu: {
-      type: {
-        required: true,
-      },
       table: {
         type: {
           summary: 'object array',
@@ -286,9 +265,6 @@ export const Menu: Story = {
       },
     },
     primaryMenu: {
-      type: {
-        required: true,
-      },
       table: {
         type: {
           summary: 'object array',

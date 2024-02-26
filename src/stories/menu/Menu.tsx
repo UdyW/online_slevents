@@ -14,6 +14,7 @@ import {
   MenuItemFeatured,
   MenuItemSecondary,
 } from './types';
+import { Button } from '../button/Button';
 
 type Props = {
   isUserAuthenticated: boolean;
@@ -52,15 +53,7 @@ const Menu: React.FC<Props> = ({
   const [route, setRoute] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentOpenTab, setCurrentOpenTab] = useState('');
-  const [accountSwitcherMaxWidth, setAccountSwitcherMaxWidth] = useState(0);
   const menuRef = useRef(null);
-
-  const changeAccountSwitcherMaxWidth = (): void => {
-    const menuWidth = menuRef.current.offsetWidth || 0;
-    const primaryMenuWidth = menuRef.current.firstChild.offsetWidth || 0;
-
-    setAccountSwitcherMaxWidth(menuWidth - primaryMenuWidth - 30);
-  };
 
   const handleMenuToggle = (
     e: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>,
@@ -104,23 +97,10 @@ const Menu: React.FC<Props> = ({
   };
 
   useEffect(() => {
-    window.addEventListener('click', handleCloseAllMenus);
-    getRoute();
-    changeAccountSwitcherMaxWidth();
-    window.addEventListener('resize', changeAccountSwitcherMaxWidth);
-
-    return () => {
-      window.removeEventListener('click', handleCloseAllMenus);
-      window.removeEventListener('resize', changeAccountSwitcherMaxWidth);
-    };
-  }, []);
-
-  useEffect(() => {
     if (route !== window.location.pathname) {
       getRoute();
     }
-    changeAccountSwitcherMaxWidth();
-  }, [route, accountSwitcherMaxWidth]);
+  }, [route]);
 
   return (
     <nav className="menu" aria-label="main menu">
@@ -165,7 +145,7 @@ const Menu: React.FC<Props> = ({
         />
 
         <div className="menu__secondary-menu is-hidden-mobile">
-          <SecondaryMenu secondaryMenu={secondaryMenu} />
+          {/* <SecondaryMenu secondaryMenu={secondaryMenu} /> */}
 
           {isUserAuthenticated ? (
             <AuthenticatedMenu
@@ -182,6 +162,9 @@ const Menu: React.FC<Props> = ({
               {loginText}
             </a>
           )}
+          <div className="menu__quote__button">
+            <Button element="button" label="Get Quote" variant="primary" />
+          </div>
         </div>
       </div>
 
@@ -282,6 +265,18 @@ const Menu: React.FC<Props> = ({
             display: none;
           }
 
+          .menu__quote__button{
+            margin-left:20px;
+            width: 100px;
+            height: 21px;
+            left: 18px;
+            top: 13.5px;
+          }
+
+          .btn__text{
+            padding: 0 10px;
+          }
+
           @media (min-width: ${theme.breakpoints.md}) {
             .menu {
               padding: ${theme.spacing.md} ${theme.spacing.lg};
@@ -325,4 +320,5 @@ const Menu: React.FC<Props> = ({
   );
 };
 
-export { Menu, Props };
+export { Menu };
+export type { Props };
