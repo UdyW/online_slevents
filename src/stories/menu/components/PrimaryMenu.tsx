@@ -64,4 +64,5 @@ const PrimaryMenu: React.FC<Props> = ({
   );
 };
 
-export { PrimaryMenu, Props };
+export { PrimaryMenu };
+export type { Props };

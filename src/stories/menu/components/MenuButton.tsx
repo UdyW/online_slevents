@@ -145,4 +145,5 @@ const MenuButton: React.FC<Props> = ({
   );
 };
 
-export { MenuButton, Props };
+export { MenuButton };
+export type { Props };

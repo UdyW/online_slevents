@@ -11,11 +11,11 @@ interface ButtonProps {
    */
   variant: Variant;
   label: string;
-  theme: any;
+  theme?: any;
   loading?: boolean;
   element?: string;
   className?: string;
-  icon: any;
+  icon?: any;
   /**
    * Optional click handler
    */

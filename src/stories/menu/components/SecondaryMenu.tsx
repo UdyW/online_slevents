@@ -57,4 +57,5 @@ const SecondaryMenu: React.FC<Props> = ({
   );
 };
 
-export { SecondaryMenu, Props };
+export { SecondaryMenu };
+export type { Props };

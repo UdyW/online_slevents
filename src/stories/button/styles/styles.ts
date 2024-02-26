@@ -4,13 +4,16 @@ import { Props } from '../types';
 const StyledButton = styled.div<Props>`
   &.btn,
   .btn {
+    font-family: 'LeagueSpartan', Verdana, sans-serif;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    border: 0;
+    padding: 0 10px;
     padding: calc(${(props) => props.theme.spacing.sm} - 2px)
       calc(${(props) => props.theme.spacing.sm} - 2px);
-    font-size: ${(props) => props.theme.fontSizes.md};
+    font-size: ${(props) => props.theme.fontSizes.sm};
     line-height: 1.5;
     cursor: pointer;
 
@@ -77,6 +80,7 @@ const StyledButton = styled.div<Props>`
         ${(props) => props.theme.palette.secondary.secondary1}
       );
       background-size: 100%;
+      border: 2px solid;
       border-color: ${(props) => props.theme.borderColors.borderColor6};
       -webkit-background-clip: text;
       -moz-background-clip: text;

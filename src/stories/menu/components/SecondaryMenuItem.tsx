@@ -133,4 +133,5 @@ const SecondaryMenuItem: React.FC<Props> = ({
   );
 };
 
-export { SecondaryMenuItem, Props };
+export { SecondaryMenuItem };
+export type { Props };

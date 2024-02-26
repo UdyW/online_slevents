@@ -1,0 +1,991 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropdownList/> should render correctly 1`] = `
+.c0.has-error {
+  padding-left: 0.459rem;
+  border-left: 2px solid #DD1D21;
+}
+
+.c1 {
+  width: 100%;
+  padding: 0.678rem;
+  margin: 0;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  color: #595959;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.878rem;
+}
+
+.c1:active,
+.c1:hover {
+  border: 1px solid #7F7F7F;
+}
+
+.c1:disabled {
+  background: #D9D9D9;
+  border-color: #7F7F7F;
+  cursor: not-allowed;
+}
+
+.c1:after {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 48px;
+  width: 48px;
+  background-color: #D9D9D9;
+}
+
+.c1.textfield--remove-browser-defaults {
+  -moz-appearance: textfield;
+}
+
+.c1.textfield--remove-browser-defaults::-webkit-outer-spin-button,
+.c1.textfield--remove-browser-defaults::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.c3 {
+  padding: 0.459rem;
+  background-color: #F9F9F9;
+}
+
+.c3:hover {
+  cursor: pointer;
+  background-color: #F9F9F9;
+}
+
+.c4 {
+  padding: 0.459rem;
+  background-color: transparent;
+}
+
+.c4:hover {
+  cursor: pointer;
+  background-color: #F9F9F9;
+}
+
+.c2 {
+  display: block;
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2px 2px #D9D9D9;
+  padding: 0;
+  margin-top: 0;
+  width: 100%;
+  max-height: 320px;
+  overflow-y: scroll;
+  z-index: 1024;
+  overflow-scrolling: touch;
+}
+
+<Component
+  theme={
+    Object {
+      "backgroundColors": Object {
+        "backgroundColor1": "#FBCE07",
+        "backgroundColor10": "#404040",
+        "backgroundColor11": "#BD2C2F",
+        "backgroundColor2": "#DD1D21",
+        "backgroundColor3": "#0097BB",
+        "backgroundColor4": "#003C88",
+        "backgroundColor5": "#008443",
+        "backgroundColor6": "#FFFFFF",
+        "backgroundColor7": "#F9F9F9",
+        "backgroundColor8": "#D9D9D9",
+        "backgroundColor9": "#595959",
+      },
+      "borderColors": Object {
+        "borderColor1": "#FBCE07",
+        "borderColor10": "#F9F9F9",
+        "borderColor11": "#7F7F7F",
+        "borderColor2": "#DD1D21",
+        "borderColor3": "#0097BB",
+        "borderColor4": "#008443",
+        "borderColor5": "#D9D9D9",
+        "borderColor6": "#A6A6A6",
+        "borderColor7": "#595959",
+        "borderColor8": "#404040",
+        "borderColor9": "#FFFFFF",
+      },
+      "breakpoints": Object {
+        "lg": "896px",
+        "md": "768px",
+        "sm": "640px",
+        "up": [Function],
+        "xl": "1080px",
+        "xl2": "1600px",
+        "xs": "480px",
+      },
+      "fontColors": Object {
+        "fontColor1": "#DD1D21",
+        "fontColor2": "#0097BB",
+        "fontColor3": "#008443",
+        "fontColor4": "#404040",
+        "fontColor5": "#FFFFFF",
+        "fontColor6": "#7F7F7F",
+      },
+      "fontSizes": Object {
+        "lg": "1.138rem",
+        "md": "1rem",
+        "sm": "0.878rem",
+        "xl": "1.296rem",
+        "xl2": "1.476rem",
+        "xl3": "1.68rem",
+        "xl4": "1.913rem",
+        "xl5": "2.178rem",
+        "xl6": "2.479rem",
+        "xs": "0.772rem",
+      },
+      "linkColors": Object {
+        "linkColor1": "#003C88",
+        "linkColor2": "#404040",
+        "linkColor3": "#0A274D",
+        "linkColor4": "#800080",
+      },
+      "palette": Object {
+        "helpers": Object {
+          "applyAlphaToColour": [Function],
+        },
+        "misc": Object {
+          "misc1": "#811114",
+          "misc2": "#BD2C2F",
+          "misc3": "#62BFD0",
+          "misc4": "#800080",
+          "misc5": "#0A274D",
+        },
+        "neutral": Object {
+          "black": "#000000",
+          "grey1": "#F9F9F9",
+          "grey2": "#D9D9D9",
+          "grey3": "#A6A6A6",
+          "grey4": "#7F7F7F",
+          "grey5": "#595959",
+          "grey6": "#404040",
+          "white": "#FFFFFF",
+        },
+        "primary": Object {
+          "primary1": "#FBCE07",
+          "primary2": "#DD1D21",
+          "primary3": "#0097BB",
+        },
+        "secondary": Object {
+          "secondary1": "#003C88",
+          "secondary2": "#008443",
+          "secondary3": "#89CFDC",
+        },
+      },
+      "spacing": Object {
+        "lg": "1.476rem",
+        "md": "1rem",
+        "sm": "0.678rem",
+        "xl": "2.178rem",
+        "xl2": "3.213rem",
+        "xl3": "4.742rem",
+        "xl4": "6.997rem",
+        "xl5": "10.326rem",
+        "xs": "0.459rem",
+        "xs2": "0.311rem",
+        "xs3": "0.211rem",
+      },
+    }
+  }
+>
+  <AutoComplete
+    featuredOptions={
+      Array [
+        "b",
+      ]
+    }
+    id="testId"
+    onOptionSelect={[Function]}
+    options={
+      Array [
+        "a",
+        "b",
+        "c",
+      ]
+    }
+    sortOptions={true}
+    theme={
+      Object {
+        "backgroundColors": Object {
+          "backgroundColor1": "#FBCE07",
+          "backgroundColor10": "#404040",
+          "backgroundColor11": "#BD2C2F",
+          "backgroundColor2": "#DD1D21",
+          "backgroundColor3": "#0097BB",
+          "backgroundColor4": "#003C88",
+          "backgroundColor5": "#008443",
+          "backgroundColor6": "#FFFFFF",
+          "backgroundColor7": "#F9F9F9",
+          "backgroundColor8": "#D9D9D9",
+          "backgroundColor9": "#595959",
+        },
+        "borderColors": Object {
+          "borderColor1": "#FBCE07",
+          "borderColor10": "#F9F9F9",
+          "borderColor11": "#7F7F7F",
+          "borderColor2": "#DD1D21",
+          "borderColor3": "#0097BB",
+          "borderColor4": "#008443",
+          "borderColor5": "#D9D9D9",
+          "borderColor6": "#A6A6A6",
+          "borderColor7": "#595959",
+          "borderColor8": "#404040",
+          "borderColor9": "#FFFFFF",
+        },
+        "breakpoints": Object {
+          "lg": "896px",
+          "md": "768px",
+          "sm": "640px",
+          "up": [Function],
+          "xl": "1080px",
+          "xl2": "1600px",
+          "xs": "480px",
+        },
+        "fontColors": Object {
+          "fontColor1": "#DD1D21",
+          "fontColor2": "#0097BB",
+          "fontColor3": "#008443",
+          "fontColor4": "#404040",
+          "fontColor5": "#FFFFFF",
+          "fontColor6": "#7F7F7F",
+        },
+        "fontSizes": Object {
+          "lg": "1.138rem",
+          "md": "1rem",
+          "sm": "0.878rem",
+          "xl": "1.296rem",
+          "xl2": "1.476rem",
+          "xl3": "1.68rem",
+          "xl4": "1.913rem",
+          "xl5": "2.178rem",
+          "xl6": "2.479rem",
+          "xs": "0.772rem",
+        },
+        "linkColors": Object {
+          "linkColor1": "#003C88",
+          "linkColor2": "#404040",
+          "linkColor3": "#0A274D",
+          "linkColor4": "#800080",
+        },
+        "palette": Object {
+          "helpers": Object {
+            "applyAlphaToColour": [Function],
+          },
+          "misc": Object {
+            "misc1": "#811114",
+            "misc2": "#BD2C2F",
+            "misc3": "#62BFD0",
+            "misc4": "#800080",
+            "misc5": "#0A274D",
+          },
+          "neutral": Object {
+            "black": "#000000",
+            "grey1": "#F9F9F9",
+            "grey2": "#D9D9D9",
+            "grey3": "#A6A6A6",
+            "grey4": "#7F7F7F",
+            "grey5": "#595959",
+            "grey6": "#404040",
+            "white": "#FFFFFF",
+          },
+          "primary": Object {
+            "primary1": "#FBCE07",
+            "primary2": "#DD1D21",
+            "primary3": "#0097BB",
+          },
+          "secondary": Object {
+            "secondary1": "#003C88",
+            "secondary2": "#008443",
+            "secondary3": "#89CFDC",
+          },
+        },
+        "spacing": Object {
+          "lg": "1.476rem",
+          "md": "1rem",
+          "sm": "0.678rem",
+          "xl": "2.178rem",
+          "xl2": "3.213rem",
+          "xl3": "4.742rem",
+          "xl4": "6.997rem",
+          "xl5": "10.326rem",
+          "xs": "0.459rem",
+          "xs2": "0.311rem",
+          "xs3": "0.211rem",
+        },
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <Component
+        autoComplete="off"
+        featuredOptions={
+          Array [
+            "b",
+          ]
+        }
+        id="testId"
+        list="testId-list"
+        name="testId"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onOptionSelect={[Function]}
+        options={
+          Array [
+            "a",
+            "b",
+            "c",
+          ]
+        }
+        sortOptions={true}
+        theme={
+          Object {
+            "backgroundColors": Object {
+              "backgroundColor1": "#FBCE07",
+              "backgroundColor10": "#404040",
+              "backgroundColor11": "#BD2C2F",
+              "backgroundColor2": "#DD1D21",
+              "backgroundColor3": "#0097BB",
+              "backgroundColor4": "#003C88",
+              "backgroundColor5": "#008443",
+              "backgroundColor6": "#FFFFFF",
+              "backgroundColor7": "#F9F9F9",
+              "backgroundColor8": "#D9D9D9",
+              "backgroundColor9": "#595959",
+            },
+            "borderColors": Object {
+              "borderColor1": "#FBCE07",
+              "borderColor10": "#F9F9F9",
+              "borderColor11": "#7F7F7F",
+              "borderColor2": "#DD1D21",
+              "borderColor3": "#0097BB",
+              "borderColor4": "#008443",
+              "borderColor5": "#D9D9D9",
+              "borderColor6": "#A6A6A6",
+              "borderColor7": "#595959",
+              "borderColor8": "#404040",
+              "borderColor9": "#FFFFFF",
+            },
+            "breakpoints": Object {
+              "lg": "896px",
+              "md": "768px",
+              "sm": "640px",
+              "up": [Function],
+              "xl": "1080px",
+              "xl2": "1600px",
+              "xs": "480px",
+            },
+            "fontColors": Object {
+              "fontColor1": "#DD1D21",
+              "fontColor2": "#0097BB",
+              "fontColor3": "#008443",
+              "fontColor4": "#404040",
+              "fontColor5": "#FFFFFF",
+              "fontColor6": "#7F7F7F",
+            },
+            "fontSizes": Object {
+              "lg": "1.138rem",
+              "md": "1rem",
+              "sm": "0.878rem",
+              "xl": "1.296rem",
+              "xl2": "1.476rem",
+              "xl3": "1.68rem",
+              "xl4": "1.913rem",
+              "xl5": "2.178rem",
+              "xl6": "2.479rem",
+              "xs": "0.772rem",
+            },
+            "linkColors": Object {
+              "linkColor1": "#003C88",
+              "linkColor2": "#404040",
+              "linkColor3": "#0A274D",
+              "linkColor4": "#800080",
+            },
+            "palette": Object {
+              "helpers": Object {
+                "applyAlphaToColour": [Function],
+              },
+              "misc": Object {
+                "misc1": "#811114",
+                "misc2": "#BD2C2F",
+                "misc3": "#62BFD0",
+                "misc4": "#800080",
+                "misc5": "#0A274D",
+              },
+              "neutral": Object {
+                "black": "#000000",
+                "grey1": "#F9F9F9",
+                "grey2": "#D9D9D9",
+                "grey3": "#A6A6A6",
+                "grey4": "#7F7F7F",
+                "grey5": "#595959",
+                "grey6": "#404040",
+                "white": "#FFFFFF",
+              },
+              "primary": Object {
+                "primary1": "#FBCE07",
+                "primary2": "#DD1D21",
+                "primary3": "#0097BB",
+              },
+              "secondary": Object {
+                "secondary1": "#003C88",
+                "secondary2": "#008443",
+                "secondary3": "#89CFDC",
+              },
+            },
+            "spacing": Object {
+              "lg": "1.476rem",
+              "md": "1rem",
+              "sm": "0.678rem",
+              "xl": "2.178rem",
+              "xl2": "3.213rem",
+              "xl3": "4.742rem",
+              "xl4": "6.997rem",
+              "xl5": "10.326rem",
+              "xs": "0.459rem",
+              "xs2": "0.311rem",
+              "xs3": "0.211rem",
+            },
+          }
+        }
+        value=""
+      >
+        <styled.div
+          className=""
+          theme={
+            Object {
+              "backgroundColors": Object {
+                "backgroundColor1": "#FBCE07",
+                "backgroundColor10": "#404040",
+                "backgroundColor11": "#BD2C2F",
+                "backgroundColor2": "#DD1D21",
+                "backgroundColor3": "#0097BB",
+                "backgroundColor4": "#003C88",
+                "backgroundColor5": "#008443",
+                "backgroundColor6": "#FFFFFF",
+                "backgroundColor7": "#F9F9F9",
+                "backgroundColor8": "#D9D9D9",
+                "backgroundColor9": "#595959",
+              },
+              "borderColors": Object {
+                "borderColor1": "#FBCE07",
+                "borderColor10": "#F9F9F9",
+                "borderColor11": "#7F7F7F",
+                "borderColor2": "#DD1D21",
+                "borderColor3": "#0097BB",
+                "borderColor4": "#008443",
+                "borderColor5": "#D9D9D9",
+                "borderColor6": "#A6A6A6",
+                "borderColor7": "#595959",
+                "borderColor8": "#404040",
+                "borderColor9": "#FFFFFF",
+              },
+              "breakpoints": Object {
+                "lg": "896px",
+                "md": "768px",
+                "sm": "640px",
+                "up": [Function],
+                "xl": "1080px",
+                "xl2": "1600px",
+                "xs": "480px",
+              },
+              "fontColors": Object {
+                "fontColor1": "#DD1D21",
+                "fontColor2": "#0097BB",
+                "fontColor3": "#008443",
+                "fontColor4": "#404040",
+                "fontColor5": "#FFFFFF",
+                "fontColor6": "#7F7F7F",
+              },
+              "fontSizes": Object {
+                "lg": "1.138rem",
+                "md": "1rem",
+                "sm": "0.878rem",
+                "xl": "1.296rem",
+                "xl2": "1.476rem",
+                "xl3": "1.68rem",
+                "xl4": "1.913rem",
+                "xl5": "2.178rem",
+                "xl6": "2.479rem",
+                "xs": "0.772rem",
+              },
+              "linkColors": Object {
+                "linkColor1": "#003C88",
+                "linkColor2": "#404040",
+                "linkColor3": "#0A274D",
+                "linkColor4": "#800080",
+              },
+              "palette": Object {
+                "helpers": Object {
+                  "applyAlphaToColour": [Function],
+                },
+                "misc": Object {
+                  "misc1": "#811114",
+                  "misc2": "#BD2C2F",
+                  "misc3": "#62BFD0",
+                  "misc4": "#800080",
+                  "misc5": "#0A274D",
+                },
+                "neutral": Object {
+                  "black": "#000000",
+                  "grey1": "#F9F9F9",
+                  "grey2": "#D9D9D9",
+                  "grey3": "#A6A6A6",
+                  "grey4": "#7F7F7F",
+                  "grey5": "#595959",
+                  "grey6": "#404040",
+                  "white": "#FFFFFF",
+                },
+                "primary": Object {
+                  "primary1": "#FBCE07",
+                  "primary2": "#DD1D21",
+                  "primary3": "#0097BB",
+                },
+                "secondary": Object {
+                  "secondary1": "#003C88",
+                  "secondary2": "#008443",
+                  "secondary3": "#89CFDC",
+                },
+              },
+              "spacing": Object {
+                "lg": "1.476rem",
+                "md": "1rem",
+                "sm": "0.678rem",
+                "xl": "2.178rem",
+                "xl2": "3.213rem",
+                "xl3": "4.742rem",
+                "xl4": "6.997rem",
+                "xl5": "10.326rem",
+                "xs": "0.459rem",
+                "xs2": "0.311rem",
+                "xs3": "0.211rem",
+              },
+            }
+          }
+        >
+          <div
+            className="c0"
+          >
+            <TextField
+              autoComplete="off"
+              featuredOptions={
+                Array [
+                  "b",
+                ]
+              }
+              hasError={false}
+              id="testId"
+              list="testId-list"
+              name="testId"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onOptionSelect={[Function]}
+              options={
+                Array [
+                  "a",
+                  "b",
+                  "c",
+                ]
+              }
+              sortOptions={true}
+              value=""
+            >
+              <styled.input
+                aria-errormessage="testId-error"
+                aria-invalid={false}
+                aria-labelledby="testId-label"
+                autoComplete="off"
+                className="textfield textfield--remove-browser-defaults"
+                featuredOptions={
+                  Array [
+                    "b",
+                  ]
+                }
+                id="testId"
+                list="testId-list"
+                name="testId"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onOptionSelect={[Function]}
+                options={
+                  Array [
+                    "a",
+                    "b",
+                    "c",
+                  ]
+                }
+                sortOptions={true}
+                theme={
+                  Object {
+                    "backgroundColors": Object {
+                      "backgroundColor1": "#FBCE07",
+                      "backgroundColor10": "#404040",
+                      "backgroundColor11": "#BD2C2F",
+                      "backgroundColor2": "#DD1D21",
+                      "backgroundColor3": "#0097BB",
+                      "backgroundColor4": "#003C88",
+                      "backgroundColor5": "#008443",
+                      "backgroundColor6": "#FFFFFF",
+                      "backgroundColor7": "#F9F9F9",
+                      "backgroundColor8": "#D9D9D9",
+                      "backgroundColor9": "#595959",
+                    },
+                    "borderColors": Object {
+                      "borderColor1": "#FBCE07",
+                      "borderColor10": "#F9F9F9",
+                      "borderColor11": "#7F7F7F",
+                      "borderColor2": "#DD1D21",
+                      "borderColor3": "#0097BB",
+                      "borderColor4": "#008443",
+                      "borderColor5": "#D9D9D9",
+                      "borderColor6": "#A6A6A6",
+                      "borderColor7": "#595959",
+                      "borderColor8": "#404040",
+                      "borderColor9": "#FFFFFF",
+                    },
+                    "breakpoints": Object {
+                      "lg": "896px",
+                      "md": "768px",
+                      "sm": "640px",
+                      "up": [Function],
+                      "xl": "1080px",
+                      "xl2": "1600px",
+                      "xs": "480px",
+                    },
+                    "fontColors": Object {
+                      "fontColor1": "#DD1D21",
+                      "fontColor2": "#0097BB",
+                      "fontColor3": "#008443",
+                      "fontColor4": "#404040",
+                      "fontColor5": "#FFFFFF",
+                      "fontColor6": "#7F7F7F",
+                    },
+                    "fontSizes": Object {
+                      "lg": "1.138rem",
+                      "md": "1rem",
+                      "sm": "0.878rem",
+                      "xl": "1.296rem",
+                      "xl2": "1.476rem",
+                      "xl3": "1.68rem",
+                      "xl4": "1.913rem",
+                      "xl5": "2.178rem",
+                      "xl6": "2.479rem",
+                      "xs": "0.772rem",
+                    },
+                    "linkColors": Object {
+                      "linkColor1": "#003C88",
+                      "linkColor2": "#404040",
+                      "linkColor3": "#0A274D",
+                      "linkColor4": "#800080",
+                    },
+                    "palette": Object {
+                      "helpers": Object {
+                        "applyAlphaToColour": [Function],
+                      },
+                      "misc": Object {
+                        "misc1": "#811114",
+                        "misc2": "#BD2C2F",
+                        "misc3": "#62BFD0",
+                        "misc4": "#800080",
+                        "misc5": "#0A274D",
+                      },
+                      "neutral": Object {
+                        "black": "#000000",
+                        "grey1": "#F9F9F9",
+                        "grey2": "#D9D9D9",
+                        "grey3": "#A6A6A6",
+                        "grey4": "#7F7F7F",
+                        "grey5": "#595959",
+                        "grey6": "#404040",
+                        "white": "#FFFFFF",
+                      },
+                      "primary": Object {
+                        "primary1": "#FBCE07",
+                        "primary2": "#DD1D21",
+                        "primary3": "#0097BB",
+                      },
+                      "secondary": Object {
+                        "secondary1": "#003C88",
+                        "secondary2": "#008443",
+                        "secondary3": "#89CFDC",
+                      },
+                    },
+                    "spacing": Object {
+                      "lg": "1.476rem",
+                      "md": "1rem",
+                      "sm": "0.678rem",
+                      "xl": "2.178rem",
+                      "xl2": "3.213rem",
+                      "xl3": "4.742rem",
+                      "xl4": "6.997rem",
+                      "xl5": "10.326rem",
+                      "xs": "0.459rem",
+                      "xs2": "0.311rem",
+                      "xs3": "0.211rem",
+                    },
+                  }
+                }
+                type="text"
+                value=""
+              >
+                <input
+                  aria-errormessage="testId-error"
+                  aria-invalid={false}
+                  aria-labelledby="testId-label"
+                  autoComplete="off"
+                  className="c1 textfield textfield--remove-browser-defaults"
+                  id="testId"
+                  list="testId-list"
+                  name="testId"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onOptionSelect={[Function]}
+                  type="text"
+                  value=""
+                />
+              </styled.input>
+            </TextField>
+          </div>
+        </styled.div>
+      </Component>
+      <DropdownList
+        featuredOptions={
+          Array [
+            "b",
+          ]
+        }
+        focusedOption="b"
+        isDropdownOpen={true}
+        listId="testId-list"
+        onSelect={[Function]}
+        options={
+          Array [
+            "a",
+            "c",
+          ]
+        }
+        searchText=""
+        theme={
+          Object {
+            "backgroundColors": Object {
+              "backgroundColor1": "#FBCE07",
+              "backgroundColor10": "#404040",
+              "backgroundColor11": "#BD2C2F",
+              "backgroundColor2": "#DD1D21",
+              "backgroundColor3": "#0097BB",
+              "backgroundColor4": "#003C88",
+              "backgroundColor5": "#008443",
+              "backgroundColor6": "#FFFFFF",
+              "backgroundColor7": "#F9F9F9",
+              "backgroundColor8": "#D9D9D9",
+              "backgroundColor9": "#595959",
+            },
+            "borderColors": Object {
+              "borderColor1": "#FBCE07",
+              "borderColor10": "#F9F9F9",
+              "borderColor11": "#7F7F7F",
+              "borderColor2": "#DD1D21",
+              "borderColor3": "#0097BB",
+              "borderColor4": "#008443",
+              "borderColor5": "#D9D9D9",
+              "borderColor6": "#A6A6A6",
+              "borderColor7": "#595959",
+              "borderColor8": "#404040",
+              "borderColor9": "#FFFFFF",
+            },
+            "breakpoints": Object {
+              "lg": "896px",
+              "md": "768px",
+              "sm": "640px",
+              "up": [Function],
+              "xl": "1080px",
+              "xl2": "1600px",
+              "xs": "480px",
+            },
+            "fontColors": Object {
+              "fontColor1": "#DD1D21",
+              "fontColor2": "#0097BB",
+              "fontColor3": "#008443",
+              "fontColor4": "#404040",
+              "fontColor5": "#FFFFFF",
+              "fontColor6": "#7F7F7F",
+            },
+            "fontSizes": Object {
+              "lg": "1.138rem",
+              "md": "1rem",
+              "sm": "0.878rem",
+              "xl": "1.296rem",
+              "xl2": "1.476rem",
+              "xl3": "1.68rem",
+              "xl4": "1.913rem",
+              "xl5": "2.178rem",
+              "xl6": "2.479rem",
+              "xs": "0.772rem",
+            },
+            "linkColors": Object {
+              "linkColor1": "#003C88",
+              "linkColor2": "#404040",
+              "linkColor3": "#0A274D",
+              "linkColor4": "#800080",
+            },
+            "palette": Object {
+              "helpers": Object {
+                "applyAlphaToColour": [Function],
+              },
+              "misc": Object {
+                "misc1": "#811114",
+                "misc2": "#BD2C2F",
+                "misc3": "#62BFD0",
+                "misc4": "#800080",
+                "misc5": "#0A274D",
+              },
+              "neutral": Object {
+                "black": "#000000",
+                "grey1": "#F9F9F9",
+                "grey2": "#D9D9D9",
+                "grey3": "#A6A6A6",
+                "grey4": "#7F7F7F",
+                "grey5": "#595959",
+                "grey6": "#404040",
+                "white": "#FFFFFF",
+              },
+              "primary": Object {
+                "primary1": "#FBCE07",
+                "primary2": "#DD1D21",
+                "primary3": "#0097BB",
+              },
+              "secondary": Object {
+                "secondary1": "#003C88",
+                "secondary2": "#008443",
+                "secondary3": "#89CFDC",
+              },
+            },
+            "spacing": Object {
+              "lg": "1.476rem",
+              "md": "1rem",
+              "sm": "0.678rem",
+              "xl": "2.178rem",
+              "xl2": "3.213rem",
+              "xl3": "4.742rem",
+              "xl4": "6.997rem",
+              "xl5": "10.326rem",
+              "xs": "0.459rem",
+              "xs2": "0.311rem",
+              "xs3": "0.211rem",
+            },
+          }
+        }
+      >
+        <styled.ul
+          aria-labelledby="testId-list"
+          id="testId-list"
+          isDropdownOpen={true}
+          role="listbox"
+        >
+          <ul
+            aria-labelledby="testId-list"
+            className="c2"
+            id="testId-list"
+            role="listbox"
+          >
+            <Option
+              focusedOption="b"
+              key="b"
+              onSelect={[Function]}
+              option="b"
+            >
+              <styled.li
+                aria-label="b"
+                aria-selected="false"
+                isFocused={true}
+                onClick={[Function]}
+                role="option"
+              >
+                <li
+                  aria-label="b"
+                  aria-selected="false"
+                  className="c3"
+                  onClick={[Function]}
+                  role="option"
+                >
+                  b
+                </li>
+              </styled.li>
+            </Option>
+            <hr />
+            <Option
+              focusedOption="b"
+              key="a"
+              onSelect={[Function]}
+              option="a"
+              selectedOption="a"
+            >
+              <styled.li
+                aria-label="a"
+                aria-selected="true"
+                isFocused={false}
+                onClick={[Function]}
+                role="option"
+              >
+                <li
+                  aria-label="a"
+                  aria-selected="true"
+                  className="c4"
+                  onClick={[Function]}
+                  role="option"
+                >
+                  a
+                </li>
+              </styled.li>
+            </Option>
+            <Option
+              focusedOption="b"
+              key="c"
+              onSelect={[Function]}
+              option="c"
+              selectedOption="c"
+            >
+              <styled.li
+                aria-label="c"
+                aria-selected="true"
+                isFocused={false}
+                onClick={[Function]}
+                role="option"
+              >
+                <li
+                  aria-label="c"
+                  aria-selected="true"
+                  className="c4"
+                  onClick={[Function]}
+                  role="option"
+                >
+                  c
+                </li>
+              </styled.li>
+            </Option>
+          </ul>
+        </styled.ul>
+      </DropdownList>
+    </div>
+  </AutoComplete>
+</Component>
+`;
